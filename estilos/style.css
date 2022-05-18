@@ -6,15 +6,6 @@
     }
 
 
-header {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgba(0, 0, 255, 0.6);
-  height: 50px;
-  margin-bottom: 0px;
-    
-    }
 
     
  ul li {
@@ -23,19 +14,6 @@ header {
 
 
     }
-
- nav {
-
-    color: rgb(23, 83, 136);
-    font-size: 0.5cm;
-    text-align: right;
-    transition: height 2s;    
-    }
-
- nav:hover {
-
-      font-size: 0.55cm;
- }        
 
  nav ul {
 
@@ -50,19 +28,35 @@ header {
 
     float: left;
     margin-top: 12px;
-
+    font-weight: bold;
     }
     
     
  nav ul li a {
 
 text-decoration: none;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 padding: 18px;
 
     }
 
+nav {
+      color: rgb(23, 83, 136);
+      font-size: 0.5cm;
+      text-align: unset;
+     
+  }
 
+.navbar-light .navbar-nav .nav-link {
+
+    color: rgb(255, 255, 255);
+}
+
+.img-border {
+
+border-radius: 10px;
+
+}
 .home {
       background-color: white;
       
@@ -88,10 +82,10 @@ padding: 18px;
 
 .menu{
      
-        margin-top: 0px;
-        height: 50px;
-        color: white;
-        display: flexbox;
+    margin-top: 0px;
+    height: 50px;
+    color: white;
+    display: flexbox;
         
 
     }
@@ -103,6 +97,35 @@ margin-bottom: 425px;
 
   }
 
+.carousel-style {
+
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 40px;
+
+}
+
+.carousel-inner {
+
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  list-style: none;
+}
+
 .grid-portfolio {
 
 display: grid;
@@ -113,18 +136,7 @@ margin-top: 100px;
 
 }
   
-.img-portfolio {
 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
-}
-
-.img-portfolio:hover {
-
-  transition: scale (1.1);
-
-}
 
 .borde {
 
@@ -140,9 +152,56 @@ margin-top: 100px;
   
 h2 {
 
-margin-top: 20px;
+margin-top: 130px;
+color: aliceblue;
+}
+
+.user-style {
+
+  text-align-last: center;
+
 
 }
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+#galeria img {  
+
+  width: 100%;
+  height: 250px ;
+
+
+}
+
+#galeria .col-lg-4 {
+
+  padding: 25px;
+
+}
+
+#galeria img:hover {
+
+border-radius: 10px;
+border: solid 5px ;
+
+}
+
+.text1 {
+
+margin: 100px;
+width: auto;
+margin-top: 150px;
+color: white;
+}
+
 .contact {
 
   display: grid;
@@ -158,7 +217,7 @@ margin-top: 20px;
 
 body {
 
-  background-image: url(../img/background.jpg);
+  background-color: rgb(12, 12, 12);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -174,15 +233,6 @@ text-align: left;
 
       }
        
-
-.grid-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "img1 img2 img3";
-  justify-items: center;
-  background-color: rgba(0, 0, 255, 0.6);
-
- }
 
 
  .img1 {
@@ -216,6 +266,8 @@ text-align: left;
   margin-left: 0px;
   
  }
+
+ 
 
 .formsty {
 
@@ -254,9 +306,8 @@ margin-bottom: 5px;
   border-radius: 7px;
   border-right: 60px;
   margin-bottom: 0px;
-  margin-top: 70px; 
+  margin-top: 150px; 
   text-align: center;
-  background-color: rgba(0, 0, 255, 0.6);
   color: white;
   
   
@@ -308,18 +359,18 @@ header {
 }
 
 
-nav {
+.navbar {
+  position: relative;
+  display: flex;
+  z-index: 99;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
-  color: rgb(28, 118, 196);
-  font-size: 0.3cm;
-  text-align: right;
-     
-  }
 
-nav:hover {
-
-    font-size: 0.32cm;
-}       
 
 nav ul li a {
 
@@ -360,7 +411,13 @@ nav ul li a {
         }
 
 
-  
+.carousel-style {
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 135px;
+          
+          }
 
 .grid-image {
   display: grid;
@@ -395,7 +452,7 @@ nav ul li a {
      
    }
 
-  .formsty {
+.formsty {
 
   border-radius: 10px;
   margin-bottom: 275px;
@@ -406,10 +463,10 @@ nav ul li a {
   background-color: rgba(0, 0, 255, 0.7);
     
     }
-  .main {
+.main {
 
-    margin-bottom: 50px;
-    margin-top:  70px;
+  margin-bottom: 50px;
+  margin-top:  70px;
     }
 
     
@@ -423,8 +480,8 @@ nav ul li a {
       
       }
 
-    }
 
+    }
 
   /*----------*/  
 
@@ -449,19 +506,18 @@ header {
 
 }
 
-nav {
-  
-  margin-top: 25px;
-  color: rgb(28, 118, 196);
-  font-size: 0.3cm;
-  text-align: center;
-     
-  }
+.navbar {
+  position: relative;
+  display: flex;
+  z-index: 99;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
-nav:hover {
 
-    font-size: 0.32cm;
-}       
 
 nav ul li a {
 
@@ -499,9 +555,16 @@ nav ul li a {
   font-size: 00.5cm;
   text-align: center;
   
-        }
+     }
 
 
+.carousel-style {
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 115px;
+          
+      }
   
 
 .grid-image {
@@ -580,39 +643,38 @@ nav ul li a {
              }
 
     }
-    
 
+
+  
    /*--------*/
    
    
-@media screen and (min-width: 720px)  and (max-width: 1200px) {
+@media screen and (min-width: 720px)  and (max-width: 1920px) {
 
 header {
 
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-align: left;
+  grid-template-columns: 1fr;
+  text-align: center;
   height: 50px;
   margin-bottom: 0px;
       
       
       }
       
-nav {
-      
-  margin-top: 6px;
-  color: rgb(28, 118, 196);
-  font-size: 0.38cm;
-  text-align: right;
-  
-      }
+      .navbar {
+        position: relative;
+        display: flex;
+        z-index: 99;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 
 
-nav:hover {
 
-  font-size: 0.40cm ;
-
-}      
 
      .home {
         background-color: white;
@@ -642,7 +704,13 @@ nav:hover {
         
               }
       
-      
+.carousel-style {
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 115px;
+                
+   }     
         
 .grid-image {
   display: grid;
