@@ -107,6 +107,7 @@ margin-top: 40px;
 
 .carousel-inner {
 
+  border-radius: 20px;
   position: relative;
   width: 60%;
   overflow: hidden;
@@ -126,6 +127,11 @@ margin-top: 40px;
   list-style: none;
 }
 
+.breadcrumb {
+
+margin-top: 22px;
+
+}
 .grid-portfolio {
 
 display: grid;
