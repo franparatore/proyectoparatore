@@ -1,55 +1,22 @@
+@import "generales";
+
+/*variables*/
+
+$col-navbar: white;
+$col-backg: rgba(0, 0, 255, 0.6);
+
+
 *{
-    /* alinear para todos los navegadores - reseteo - */
-        padding: 0;
-        margin: 0;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-
-
-    
- ul li {
-
-    list-style-type: none;
-
-
-    }
-
- nav ul {
-
-    list-style: none;
-    display: inline-block;
-        
-
-    }
-
-    
- nav ul li {
-
-    float: left;
-    margin-top: 12px;
-    font-weight: bold;
-    }
-    
-    
- nav ul li a {
-
-text-decoration: none;
-color: rgb(255, 255, 255);
-padding: 18px;
-
-    }
-
-nav {
-      color: rgb(23, 83, 136);
-      font-size: 0.5cm;
-      text-align: unset;
-     
+/* alinear para todos los navegadores - reseteo - */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
 
 .navbar-light .navbar-nav .nav-link {
 
-    color: rgb(255, 255, 255);
+    color: $col-navbar;
 }
 
 .img-border {
@@ -57,29 +24,12 @@ nav {
 border-radius: 10px;
 
 }
-.home {
-      background-color: white;
+.home .servicios .nosotros .contacto .portfolio {
+     
+  background-color: $col-navbar;
       
       }    
-
-
       
-.servicios {
-        background-color: white;
-        }    
-      
-.nosotros {
-          background-color: white;
-          }    
-      
-.contacto {
-            background-color: white;
-            }    
-      
-.portfolio { 
-              background-color: white;
-              }    
-
 .menu{
      
     margin-top: 0px;
@@ -137,13 +87,11 @@ margin-top: 22px;
 display: grid;
 grid-template-columns: auto auto auto auto;
 justify-content: space-around;
-background-color: rgba(0, 0, 255, 0.6);
+background-color: $col-backg;
 margin-top: 100px;
 
 }
   
-
-
 .borde {
 
   border-radius: 10px;
@@ -220,7 +168,6 @@ color: white;
                  
          }
 
-
 body {
 
   background-color: rgb(12, 12, 12);
@@ -231,7 +178,6 @@ body {
 
       }
 
-
 .titulo_1 {
 
 font-size: 00.5cm;
@@ -239,41 +185,18 @@ text-align: left;
 
       }
        
-
-
- .img1 {
+.img1 .img2 .img3 {
 
   float: center;
   margin: 50px;
   
  }
-
- 
- 
-
- .img2 {
-
-  float: center;
-  margin: 50px;
-   
- }
-
- .img3 {
-
-  float: center;
-  margin: 50px;
-   
- }
-
-
  
 .logo {
  
   margin-left: 0px;
   
  }
-
- 
 
 .formsty {
 
@@ -283,7 +206,7 @@ margin-top: 70px;
 margin-left: 1;
 margin-right: 1;
 color: white;
-background-color: rgba(0, 0, 255, 0.7);
+background-color: $col-backg;
 
 }
 
@@ -300,7 +223,6 @@ margin-bottom: 5px;
 width: 220px;
 margin-bottom: 5px;  
  }
-
 
 .footsty {
 
@@ -319,21 +241,21 @@ margin-bottom: 5px;
   
   }
 
-  .c1 {
+.c1 {
 
     margin-top: 10px;
     margin-bottom: 10px;
 
   }
 
-  .c2 {
+.c2 {
 
     margin-top: 10px;
     margin-bottom: 10px;
 
   }
 
-  .c3 {
+.c3 {
 
     margin-top: 10px;
     margin-bottom: 10px;
@@ -361,9 +283,7 @@ header {
   height: 50px;
   margin-bottom: 0px;
 
-
 }
-
 
 .navbar {
   position: relative;
@@ -376,8 +296,6 @@ header {
   padding-bottom: 0.5rem;
 }
 
-
-
 nav ul li a {
 
   text-decoration: none;
@@ -386,36 +304,18 @@ nav ul li a {
   
       }
 
-      .home {
-        background-color: unset;
+      .home .servicios .nosotros .contacto .portfolio{
+        
+           background-color: unset;
+
         }    
         
-        .servicios {
-          background-color: unset;
-          }    
-        
-          .nosotros {
-            background-color: unset;
-            }    
-        
-            .contacto {
-              background-color: unset;
-              }    
-        
-              .portfolio { 
-                background-color: unset;
-                }    
-
-
-
-
 .titulo_1 {
 
   font-size: 00.5cm;
   text-align: center;
   
         }
-
 
 .carousel-style {
 
@@ -432,26 +332,11 @@ nav ul li a {
                        "img2"
                        "img3";
   justify-items: center;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
         
          }
   
-  
-   .img1 {
-  
-    float: center;
-    margin: 20px;
-     
-   }
-
-   .img2 {
-  
-    float: center;
-    margin: 20px;
-     
-   }
-
-   .img3 {
+.img1 .img2 .img3 {
   
     float: center;
     margin: 20px;
@@ -466,22 +351,22 @@ nav ul li a {
   margin-left: 1;
   margin-right: 1;
   color: white;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: $col-backg;
     
     }
+
 .main {
 
   margin-bottom: 50px;
   margin-top:  70px;
     }
-
     
 .grid-portfolio {
 
   display: grid;
   grid-template-columns: auto;
   justify-content: space-around;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
   margin-top: 70px;
       
       }
@@ -523,8 +408,6 @@ header {
   padding-bottom: 0.5rem;
 }
 
-
-
 nav ul li a {
 
   text-decoration: none;
@@ -533,36 +416,18 @@ nav ul li a {
   
       }
 
-      .home {
+      .home .servicios .nosotros .contacto .portfolio{
+        
         background-color: unset;
+
         }    
         
-        .servicios {
-          background-color: unset;
-          }    
-        
-          .nosotros {
-            background-color: unset;
-            }    
-        
-            .contacto {
-              background-color: unset;
-              }    
-        
-              .portfolio { 
-                background-color: unset;
-                }    
-
-
-
-
 .titulo_1 {
 
   font-size: 00.5cm;
   text-align: center;
   
      }
-
 
 .carousel-style {
 
@@ -572,7 +437,6 @@ nav ul li a {
           
       }
   
-
 .grid-image {
   display: grid;
   grid-template-columns: 1fr ;
@@ -580,32 +444,17 @@ nav ul li a {
                        "img2"
                        "img3";
   justify-items: center;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
         
          }
   
   
-   .img1 {
+   .img1 .img2 .img3 {
   
     float: center;
     margin: 20px;
      
    }
-
-   .img2 {
-  
-    float: center;
-    margin: 20px;
-     
-   }
-
-   .img3 {
-  
-    float: center;
-    margin: 20px;
-     
-   }
-
 
 .formsty {
 
@@ -615,7 +464,7 @@ nav ul li a {
   margin-left: 1;
   margin-right: 1;
   color: white;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: $col-backg;
     
     }
 
@@ -624,14 +473,13 @@ nav ul li a {
   margin-bottom: 50px;
   margin-top:  70px;
     }
-
     
 .grid-portfolio {
 
   display: grid;
   grid-template-columns: auto;
   justify-content: space-around;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
   margin-top: 70px;
       
       }
@@ -682,27 +530,12 @@ header {
 
 
 
-     .home {
-        background-color: white;
+     .home .servicios .nosotros .contacto .portfolio{
+
+        background-color: $col-navbar;
+
         }    
-        
-        .servicios {
-          background-color: white;
-          }    
-        
-          .nosotros {
-            background-color: white;
-            }    
-        
-            .contacto {
-              background-color: white;
-              }    
-        
-              .portfolio { 
-                background-color: white;
-                }    
-      
-      
+              
 .titulo_1 {
       
   font-size: 00.5cm;
@@ -725,32 +558,17 @@ header {
                        "img2"
                        "img3";
   justify-items: center;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
               
          }
         
         
-    .img1 {
+    .img1 .img2 .img3{
         
       float: center;
       margin: 30px;
            
          }
-
-    .img2 {
-        
-      float: center;
-      margin: 30px;
-           
-         }
-
-    .img3 {
-        
-      float: center;
-      margin: 30px;
-           
-         }
-      
 
 .formsty {
 
@@ -760,7 +578,7 @@ header {
   margin-left: 1;
   margin-right: 1;
   color: white;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: $col-backg;
           
           }
 .main {
@@ -768,20 +586,18 @@ header {
   margin-bottom: 50px;
           
          }
-      
-          
+                
 .grid-portfolio {
       
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: $col-backg;
   margin-top: 50px;
             
           }
 
-
- .contact {
+.contact {
 
   display: grid;
   grid-template-columns: 1fr;
@@ -790,9 +606,6 @@ header {
   text-align: center;
   margin-top: 50px;
               
-            
           }
-
-
 
     }
