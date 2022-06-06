@@ -1,5 +1,5 @@
 @import "generales";
-
+@import "operaciones";
 /*variables*/
 
 $col-navbar: white;
@@ -104,6 +104,12 @@ margin-top: 100px;
  
   }
   
+h1 {
+
+  text-align: center;
+  color: white;
+
+}  
 .h2 {
 
 margin-top: 130px;
@@ -210,7 +216,7 @@ background-color: $col-backg;
 
 }
 
- textarea { 
+textarea { 
 
 width: 220px;
 height: 220px;
@@ -222,6 +228,22 @@ margin-bottom: 5px;
 
 width: 220px;
 margin-bottom: 5px;  
+ }
+
+ .section {
+
+  float: left;
+ }
+
+ .section2 {
+
+  float: left;
+  margin-left: 70px;
+ }
+
+ .section3 {
+
+  margin-top: 200px;
  }
 
 .footsty {
